@@ -1,0 +1,112 @@
+[
+  {
+    "title": "OpenAI veröffentlicht ein Update für seine Modellplattform",
+    "url": "https://openai.com/news/",
+    "snippet": "Die offizielle Produktmeldung beschreibt neue Funktionen und Änderungen für Entwickler und Nutzer.",
+    "source": "OpenAI",
+    "topic": "ai",
+    "label": "KI",
+    "kind": "official",
+    "priority": 5
+  },
+  {
+    "title": "Neue Forschung von Google DeepMind rückt effiziente Modelle in den Fokus",
+    "url": "https://deepmind.google/discover/blog/",
+    "snippet": "Der Forschungsbeitrag behandelt effizientere Architekturen und ihren möglichen Einsatz in der Praxis.",
+    "source": "Google DeepMind",
+    "topic": "ai",
+    "label": "KI",
+    "kind": "official",
+    "priority": 5
+  },
+  {
+    "title": "Open-Weight-Modelle werden auf lokaler Hardware leistungsfähiger",
+    "url": "https://huggingface.co/blog",
+    "snippet": "Neue offene Modelle verbessern die Möglichkeiten für private, lokale Inferenz auf Workstations.",
+    "source": "Hugging Face",
+    "topic": "local",
+    "label": "Lokale KI",
+    "kind": "official",
+    "priority": 4
+  },
+  {
+    "title": "Bundestag berät über ein neues innenpolitisches Vorhaben",
+    "url": "https://www.bundestag.de/",
+    "snippet": "Die Beratungen verbinden praktische Gesetzgebung mit einer breiteren Debatte über politische Prioritäten.",
+    "source": "Deutscher Bundestag",
+    "topic": "de",
+    "label": "Deutschland",
+    "kind": "official",
+    "priority": 5
+  },
+  {
+    "title": "Bundesregierung stellt die Schwerpunkte der kommenden Woche vor",
+    "url": "https://www.bundesregierung.de/",
+    "snippet": "Mehrere wirtschafts- und sicherheitspolitische Themen stehen auf der Tagesordnung.",
+    "source": "Bundesregierung",
+    "topic": "de",
+    "label": "Deutschland",
+    "kind": "official",
+    "priority": 5
+  },
+  {
+    "title": "EU-Institutionen einigen sich auf die nächsten politischen Verhandlungen",
+    "url": "https://www.consilium.europa.eu/de/press/press-releases/",
+    "snippet": "Die Agenda umfasst Wirtschafts-, Sicherheits- und Digitalpolitik.",
+    "source": "Rat der Europäischen Union",
+    "topic": "eu",
+    "label": "Europa",
+    "kind": "official",
+    "priority": 5
+  },
+  {
+    "title": "Europa diskutiert seine strategische Rolle zwischen USA und China",
+    "url": "https://www.europarl.europa.eu/news/de/",
+    "snippet": "Im Mittelpunkt stehen Handel, Technologie und sicherheitspolitische Abhängigkeiten.",
+    "source": "Europäisches Parlament",
+    "topic": "eu",
+    "label": "Europa",
+    "kind": "official",
+    "priority": 4
+  },
+  {
+    "title": "USA und China setzen ihre Gespräche über Handel und Technologie fort",
+    "url": "https://www.reuters.com/world/",
+    "snippet": "Die Beziehungen der beiden Großmächte bleiben ein zentraler Faktor der Weltpolitik.",
+    "source": "Reuters",
+    "topic": "world",
+    "label": "Weltpolitik",
+    "kind": "news",
+    "priority": 4
+  },
+  {
+    "title": "Neue Sicherheitsfragen prägen die internationale Diplomatie",
+    "url": "https://apnews.com/world-news",
+    "snippet": "Mehrere Regierungen beraten über Verteidigung, Bündnisse und Krisenkommunikation.",
+    "source": "Associated Press",
+    "topic": "world",
+    "label": "Weltpolitik",
+    "kind": "news",
+    "priority": 4
+  },
+  {
+    "title": "LocalLLaMA diskutiert den Hardwarebedarf neuer offener Modelle",
+    "url": "https://www.reddit.com/r/LocalLLaMA/",
+    "snippet": "Nutzer vergleichen Speicherbedarf, Quantisierung und die praktische Geschwindigkeit lokaler Inferenz.",
+    "source": "Reddit / LocalLLaMA",
+    "topic": "social",
+    "label": "Reddit-Signal",
+    "kind": "social",
+    "priority": 2
+  },
+  {
+    "title": "Forschungscommunity ordnet einen neuen Benchmark ein",
+    "url": "https://www.reddit.com/r/MachineLearning/",
+    "snippet": "Die Diskussion hebt Stärken und Grenzen des Benchmarks hervor.",
+    "source": "Reddit / MachineLearning",
+    "topic": "social",
+    "label": "Reddit-Signal",
+    "kind": "social",
+    "priority": 2
+  }
+]

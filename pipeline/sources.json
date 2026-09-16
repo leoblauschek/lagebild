@@ -1,0 +1,110 @@
+[
+  {
+    "id": "tagesschau",
+    "name": "Tagesschau",
+    "url": "https://www.tagesschau.de/xml/rss2/",
+    "topic": "de",
+    "label": "Deutschland",
+    "kind": "news",
+    "priority": 5
+  },
+  {
+    "id": "bundesregierung",
+    "name": "Bundesregierung",
+    "url": "https://www.bundesregierung.de/service/rss/breg-de/1151242/feed.xml",
+    "topic": "de",
+    "label": "Deutschland",
+    "kind": "official",
+    "priority": 5
+  },
+  {
+    "id": "openai",
+    "name": "OpenAI",
+    "url": "https://openai.com/news/rss.xml",
+    "topic": "ai",
+    "label": "KI",
+    "kind": "official",
+    "priority": 5
+  },
+  {
+    "id": "deepmind",
+    "name": "Google DeepMind",
+    "url": "https://deepmind.google/blog/rss.xml",
+    "topic": "ai",
+    "label": "KI",
+    "kind": "official",
+    "priority": 5
+  },
+  {
+    "id": "huggingface",
+    "name": "Hugging Face",
+    "url": "https://huggingface.co/blog/feed.xml",
+    "topic": "local",
+    "label": "Lokale KI",
+    "kind": "official",
+    "priority": 4
+  },
+  {
+    "id": "google-ai-de",
+    "name": "Google News",
+    "url": "https://news.google.com/rss/search?q=OpenAI+OR+Anthropic+OR+DeepMind+OR+KI+when%3A2d&hl=de&gl=DE&ceid=DE%3Ade",
+    "topic": "ai",
+    "label": "KI",
+    "kind": "news",
+    "priority": 3
+  },
+  {
+    "id": "google-local-ai",
+    "name": "Google News",
+    "url": "https://news.google.com/rss/search?q=%22local+AI%22+OR+%22open+source+AI%22+OR+%22open+weights%22+when%3A7d&hl=en-US&gl=US&ceid=US%3Aen",
+    "topic": "local",
+    "label": "Lokale KI",
+    "kind": "news",
+    "priority": 3
+  },
+  {
+    "id": "google-de-politik",
+    "name": "Google News",
+    "url": "https://news.google.com/rss/search?q=Deutschland+Politik+Bundestag+Bundesregierung+when%3A2d&hl=de&gl=DE&ceid=DE%3Ade",
+    "topic": "de",
+    "label": "Deutschland",
+    "kind": "news",
+    "priority": 3
+  },
+  {
+    "id": "google-eu-politik",
+    "name": "Google News",
+    "url": "https://news.google.com/rss/search?q=EU+Europa+Politik+Br%C3%BCssel+when%3A2d&hl=de&gl=DE&ceid=DE%3Ade",
+    "topic": "eu",
+    "label": "Europa",
+    "kind": "news",
+    "priority": 4
+  },
+  {
+    "id": "google-weltpolitik",
+    "name": "Google News",
+    "url": "https://news.google.com/rss/search?q=USA+China+Geopolitik+Au%C3%9Fenpolitik+when%3A2d&hl=de&gl=DE&ceid=DE%3Ade",
+    "topic": "world",
+    "label": "Weltpolitik",
+    "kind": "news",
+    "priority": 4
+  },
+  {
+    "id": "reddit-localllama",
+    "name": "Reddit / LocalLLaMA",
+    "url": "https://www.reddit.com/r/LocalLLaMA/.rss",
+    "topic": "social",
+    "label": "Reddit-Signal",
+    "kind": "social",
+    "priority": 2
+  },
+  {
+    "id": "reddit-machinelearning",
+    "name": "Reddit / MachineLearning",
+    "url": "https://www.reddit.com/r/MachineLearning/.rss",
+    "topic": "social",
+    "label": "Reddit-Signal",
+    "kind": "social",
+    "priority": 2
+  }
+]

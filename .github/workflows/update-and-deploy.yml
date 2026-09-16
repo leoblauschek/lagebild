@@ -1,0 +1,51 @@
+name: Abendbericht aktualisieren
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: "30 18 * * *"
+      timezone: "Europe/Berlin"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Repository laden
+        uses: actions/checkout@v6
+
+      - name: Python einrichten
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Pipeline testen
+        run: python -m unittest discover -s tests -v
+
+      - name: Aktuelle Ausgabe bauen
+        run: python pipeline/update_dashboard.py
+
+      - name: GitHub Pages einrichten
+        uses: actions/configure-pages@v5
+
+      - name: Website-Artefakt hochladen
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+      - name: Auf GitHub Pages veröffentlichen
+        id: deployment
+        uses: actions/deploy-pages@v4
