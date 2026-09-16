@@ -110,8 +110,9 @@ def route_topic(source: dict[str, Any], title: str, snippet: str) -> tuple[str, 
     topic = source["topic"]
     if source.get("id") != "tagesschau":
         return topic, source["label"]
+    title_text = title.casefold()
     text = f"{title} {snippet}".casefold()
-    if re.search(r"\bki\b|künstliche intelligenz|openai|anthropic|deepmind|chatgpt", text):
+    if re.search(r"\bki\b|künstliche intelligenz|openai|anthropic|deepmind|chatgpt", title_text):
         topic = "ai"
     elif any(word in text for word in ("eu-kommission", "eu-parlament", "europa", "brüssel", "europäische union")):
         topic = "eu"

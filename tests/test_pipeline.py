@@ -50,6 +50,15 @@ class PipelineTests(unittest.TestCase):
         topic, label = dashboard.route_topic(source, "US-Notenbank erhöht den Leitzins", "Die Fed reagiert")
         self.assertEqual((topic, label), ("world", "Weltpolitik"))
 
+    def test_does_not_route_finance_story_as_ai_from_incidental_snippet(self):
+        source = {"id": "tagesschau", "topic": "de", "label": "Deutschland"}
+        topic, _ = dashboard.route_topic(
+            source,
+            "Marktbericht: DAX schließt im Plus",
+            "Aktien aus dem KI- und Halbleiterbereich waren gefragt.",
+        )
+        self.assertEqual(topic, "de")
+
     def test_fixture_build_is_complete_and_safe(self):
         fixture = ROOT / "pipeline" / "fixtures" / "articles.json"
         output = ROOT / "dist" / "_test-index.html"
